@@ -11,8 +11,9 @@ public class Jogador extends Pessoa{
 		
 	}
 	
-	public Jogador(TipoJogador tipo) {
+	public Jogador(String nome, TipoJogador tipo) {
 		super();
+		super.nome = nome;
 		this.tipo = tipo;
 	}
 	

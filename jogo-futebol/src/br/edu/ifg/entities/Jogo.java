@@ -19,6 +19,13 @@ public class Jogo {
 		
 	}
 	
+	
+	public Jogo(Equipe equipeA, Equipe equipeB) {
+		super();
+		this.equipeA = equipeA;
+		this.equipeB = equipeB;
+	}
+	
 	public Jogo(Equipe equipeA, Equipe equipeB, String local, LocalDateTime dataHora) {
 		super();
 		this.equipeA = equipeA;
@@ -36,7 +43,7 @@ public class Jogo {
 		System.out.println(equipeA.getNome()+": "+ra+" | "+equipeB.getNome()+": "+rb);
 	}
 	
-	public void defineResultado(Integer ra, Integer rb) {
+	private void defineResultado(Integer ra, Integer rb) {
 		if(ra > rb) {
 			this.resultado = "Vencedor: "+equipeA.getNome();
 			this.equipeVencedora = equipeA;

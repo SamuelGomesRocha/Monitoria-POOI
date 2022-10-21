@@ -13,6 +13,14 @@ public class Equipe {
 		
 	}
 	
+	
+	public Equipe(String nome) {
+		super();
+		this.nome = nome;
+	}
+
+
+
 	public Equipe(String nome, List<Jogador> jogadores, List<Tecnico> tecnicos, String natalidade) {
 		super();
 		this.nome = nome;
